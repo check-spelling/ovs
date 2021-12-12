@@ -660,10 +660,10 @@ log_poll_interval(long long int last_wakeup)
                           rusage.ru_majflt - last_rusage->ru_majflt);
             }
             if (rusage.ru_inblock > last_rusage->ru_inblock
-                || rusage.ru_oublock > last_rusage->ru_oublock) {
+                || rusage.ru_outblock > last_rusage->ru_outblock) {
                 VLOG_WARN("disk: %ld reads, %ld writes",
                           rusage.ru_inblock - last_rusage->ru_inblock,
-                          rusage.ru_oublock - last_rusage->ru_oublock);
+                          rusage.ru_outblock - last_rusage->ru_outblock);
             }
             if (rusage.ru_nvcsw > last_rusage->ru_nvcsw
                 || rusage.ru_nivcsw > last_rusage->ru_nivcsw) {

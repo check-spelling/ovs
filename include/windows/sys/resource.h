@@ -28,7 +28,7 @@ struct rusage {
     long   ru_majflt;        /* page faults (hard page faults) */
     long   ru_nswap;         /* swaps */
     long   ru_inblock;       /* block input operations */
-    long   ru_oublock;       /* block output operations */
+    long   ru_outblock;       /* block output operations */
     long   ru_msgsnd;        /* IPC messages sent */
     long   ru_msgrcv;        /* IPC messages received */
     long   ru_nsignals;      /* signals received */
